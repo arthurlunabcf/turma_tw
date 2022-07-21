@@ -39,7 +39,7 @@ public class SalaResource {
 
     @PutMapping(path = "{id}")
     public String update(@PathVariable Long id, @RequestBody SalaRequest salaRequest){
-        return "id igual " + id + " obj: " + salaRequest;
+        return "id igual " + id + " obj: " + salaRequest.toString();
     }
 
     @PatchMapping(path = "nome/{id}")
